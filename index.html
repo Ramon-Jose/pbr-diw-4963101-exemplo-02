@@ -12,9 +12,9 @@
         }
 
         .cabecalho {
-            border: 1px solid #ada5a5;
+            border: 1px solid #c7c5c5;
             height: 5rem;
-            /*box-shadow: .5rem .5rem .3rem .01rem #ada5a5;*/
+            /*box-shadow: .5rem .5rem .3rem .01rem #c7c5c5;*/
             display: flex;
             flex-wrap: wrap;
             justify-content: start;
@@ -50,18 +50,20 @@
 
         .menu-lateral {
             /*border: 3px solid green;*/
-            width: 20rem;
+            width: 15rem;
             height: 30rem;
-
+            padding-top: 1rem;
         }
 
         .parte-principal {
-            border: 3px dashed blue;
+            /*border: 3px dashed blue;*/
+            display: flex;
+            flex-wrap: wrap;
             flex-grow: 1;
         }
 
         .tile {
-            background-color: #ada5a5;
+            background-color: #c7c5c5;
             color: blue;
             padding: 1rem;
             margin-bottom: .5rem;
@@ -76,32 +78,122 @@
         a {
             text-decoration: none;
         }
+
+        img {
+            width: 15rem;
+        }
+
+        .cartao {
+            width: 15rem;
+            border: 1px solid #c7c5c5;
+            height: 22rem;
+            box-shadow: .5rem .5rem .3rem .01rem #c7c5c5;
+            margin: 1rem;
+        }
+
+        .descricao {
+            padding: 1rem;
+        }
+
+        .preco {
+            padding: 1rem;
+            font-weight: bolder;
+            text-align: right;
+        }
     </style>
 </head>
 
 <body>
     <div class="cabecalho">
         <div class="item logo">Logo</div>
-        <div class="item titulo">Titulo</div>
+        <div class="item titulo">Título</div>
         <div class="item menu-sandwich">Menu</div>
     </div>
-
     <div class="container">
         <nav class="menu-lateral">
             <a href="https://www.pucminas.br">
                 <div class="tile">PUC Minas</div>
             </a>
-            <a href="https://www.primevideo.com">
+
+            <a href="https://www.primevideo.com/">
                 <div class="tile">Prime Video</div>
             </a>
-            <a href="https://www.google.com.br">
+
+            <a href="https://www.google.com/">
                 <div class="tile">Google</div>
             </a>
-            <a href="https://www.mcdonalds.com.br">
+
+            <a href="https://www.mcdonalds.com.br/">
                 <div class="tile">McDonalds</div>
             </a>
         </nav>
-        <main class="parte-principal">Parte principal</main>
+        <main class="parte-principal">
+
+            <div class="cartao">
+                <div class="imagem">
+                    <img src="sandwich.png" alt="Sandwich do McDonald's">
+                </div>
+                <div class="descricao">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquid rem explicabo blanditiis
+                    in cum facilis quod id quibusdam.
+                </div>
+                <div class="preco">
+                    R$ 45,99
+                </div>
+            </div>
+
+            <div class="cartao">
+                <div class="imagem">
+                    <img src="sandwich.png" alt="Sandwich do McDonald's">
+                </div>
+                <div class="descricao">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquid rem explicabo blanditiis
+                    in cum facilis quod id quibusdam.
+                </div>
+                <div class="preco">
+                    R$ 45,99
+                </div>
+            </div>
+
+            <div class="cartao">
+                <div class="imagem">
+                    <img src="sandwich.png" alt="Sandwich do McDonald's">
+                </div>
+                <div class="descricao">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquid rem explicabo blanditiis
+                    in cum facilis quod id quibusdam.
+                </div>
+                <div class="preco">
+                    R$ 45,99
+                </div>
+            </div>
+
+            <div class="cartao">
+                <div class="imagem">
+                    <img src="sandwich.png" alt="Sandwich do McDonald's">
+                </div>
+                <div class="descricao">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquid rem explicabo blanditiis
+                    in cum facilis quod id quibusdam.
+                </div>
+                <div class="preco">
+                    R$ 45,99
+                </div>
+            </div>
+
+            <div class="cartao">
+                <div class="imagem">
+                    <img src="sandwich.png" alt="Sandwich do McDonald's">
+                </div>
+                <div class="descricao">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquid rem explicabo blanditiis
+                    in cum facilis quod id quibusdam.
+                </div>
+                <div class="preco">
+                    R$ 45,99
+                </div>
+            </div>
+        </main>
     </div>
 </body>
 
